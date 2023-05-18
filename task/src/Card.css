@@ -1,0 +1,103 @@
+.interview-card {
+    margin-bottom: 20px;
+  }
+  
+  .interview-card-grid {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* align-items: center; */
+  }
+  .interview-card:hover{
+  transform: scale(1.1);
+  background: #f2ffecfd;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+.interview-card:hover .interview-card-button {
+    background-color: #64ff1cfd;
+    color: #fff; 
+
+    
+  }
+  .interview-card-name {
+    grid-column: 2 / 3;
+    grid-row:1 / 2;
+    margin-left: -40%;
+    font-size: 20px;
+   color: #04528d;
+  }
+  
+  .interview-card-role {
+    grid-column: 2 / 3;
+    grid-row:2 / 2;
+    align-items: top;
+    font-size: 18px;
+    margin-left: -40%;
+    margin-top: -5px;
+  }
+  
+  .interview-card-time {
+    display:inline;
+    
+    grid-column: 4 / 5;
+    grid-row:1 / 2;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .interview-card-date {
+    display:inline;
+    margin-left: -35%;
+    grid-column: 4 / 5;
+    grid-row:1 / 2;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .interview-card-actions {
+    grid-column: 5/5;
+    display: flex;
+    margin-right:10px;
+    grid-row: 1/ span 2;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .interview-card-button{
+    margin-left: -150%;
+    padding: 10%;
+    
+    padding-left: 30%;
+    padding-right: 30%;
+    grid-column: 5/ 5;
+    grid-row: 1/ span 2;
+    border-radius: 10px; 
+    font-size: 20px;
+    border-color: #fff;
+    font-family:'Times New Roman', Times, serif;
+    
+  }
+  .interview-card-link {
+    /* margin-right: 10px; */
+    grid-column: 4 / 5;
+    grid-row:2 / 2;
+    margin-top: -5px;
+    align-items: top;
+    text-decoration: none;
+    color:rgb(38, 246, 1)
+  }
+  
+  .interview-card-settings {
+    margin-left: auto;
+  }
+  
+  hr {
+    margin-top: 10px;
+    margin-bottom: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
